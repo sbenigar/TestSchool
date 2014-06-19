@@ -65,9 +65,13 @@ public class Alumnos {
     
     @MemberOrder(sequence = "2")
     public Alumno create(
-            final @Named("Name") String name) {
+            final @Named("Nombre") String nombre,
+            final @Named("Apellido") String apellido,
+            final @Named("DNI") String dni,
+            final @Named("Calle") String calle,
+            final @Named("Numero") int numero) {
         final Alumno obj = container.newTransientInstance(Alumno.class);
-        obj.setName(name);
+        obj.setName(nombre);
         container.persistIfNotAlready(obj);
         return obj;
     }
