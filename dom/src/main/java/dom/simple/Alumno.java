@@ -53,7 +53,6 @@ public class Alumno implements Comparable<Alumno> {
     private String name;
 
     @javax.jdo.annotations.Column(allowsNull="false")
-    @Title(sequence="1")
     @MemberOrder(sequence="1.2")
     public String getName() {
         return name;
@@ -123,9 +122,14 @@ public class Alumno implements Comparable<Alumno> {
 
     @Override
     public int compareTo(Alumno other) {
-        return ObjectContracts.compare(this, other, "name");
+        return ObjectContracts.compare(this, other, "dni");
     }
 
+    
+    public String title() {
+		return apellido + ", " + name;
+	}
+    
     
     // //////////////////////////////////////
     // Injected

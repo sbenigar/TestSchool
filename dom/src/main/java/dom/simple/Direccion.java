@@ -41,6 +41,10 @@ public class Direccion {
 	}
 	// }}
 
+	
+	public String title() {
+		return calle + " " + numero;
+	}
 
 
 }
