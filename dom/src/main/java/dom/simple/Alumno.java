@@ -19,7 +19,9 @@
 package dom.simple;
 
 import javax.jdo.annotations.Column;
+import javax.jdo.annotations.Embedded;
 import javax.jdo.annotations.IdentityType;
+import javax.jdo.annotations.Persistent;
 import javax.jdo.annotations.VersionStrategy;
 
 import org.apache.isis.applib.DomainObjectContainer;
@@ -89,6 +91,28 @@ public class Alumno implements Comparable<Alumno> {
 	// }}
 
 
+	///////////////////////////////
+	
+	
+	// {{ Direccion (property)
+	private Direccion direccion;
+
+	@MemberOrder(sequence = "1.5")
+	@Column(allowsNull = "true")
+	
+    public Direccion getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(final Direccion direccion) {
+		this.direccion = direccion;
+	}
+	// }}
+
+
+	
+	
+	////////////////////////////////
     
     
     

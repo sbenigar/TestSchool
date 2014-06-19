@@ -71,9 +71,13 @@ public class Alumnos {
             final @Named("Calle") String calle,
             final @Named("Numero") int numero) {
         final Alumno obj = container.newTransientInstance(Alumno.class);
+        final Direccion dire = new Direccion();
+        dire.setCalle(calle);
+        dire.setNumero(numero);
         obj.setName(nombre);
         obj.setApellido(apellido);
         obj.setDni(dni);
+        obj.setDireccion(dire);
         container.persistIfNotAlready(obj);
         return obj;
     }

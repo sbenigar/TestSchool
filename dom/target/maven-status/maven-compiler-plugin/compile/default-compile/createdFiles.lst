@@ -1,6 +1,8 @@
 dom/simple/SimpleObject.class
 dom/simple/Alumno.class
+dom/simple/Direccion.class
 dom/simple/SimpleObjects.class
+dom/simple/QDireccion.class
 dom/simple/QSimpleObject.class
 dom/simple/Alumnos.class
 dom/simple/QAlumno.class
