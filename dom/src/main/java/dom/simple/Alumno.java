@@ -52,7 +52,7 @@ public class Alumno implements Comparable<Alumno> {
 
     @javax.jdo.annotations.Column(allowsNull="false")
     @Title(sequence="1")
-    @MemberOrder(sequence="1")
+    @MemberOrder(sequence="1.2")
     public String getName() {
         return name;
     }
@@ -60,6 +60,36 @@ public class Alumno implements Comparable<Alumno> {
     public void setName(final String name) {
         this.name = name;
     }
+    
+    // {{ Apellido (property)
+	private String apellido;
+
+	@MemberOrder(sequence = "1.1")
+	@javax.jdo.annotations.Column(allowsNull="false")
+	public String getApellido() {
+		return apellido;
+	}
+
+	public void setApellido(final String apellido) {
+		this.apellido = apellido;
+	}
+	// }}
+
+	// {{ DNI (property)
+	private int dni;
+
+	@MemberOrder(sequence = "1.3")
+	public int getDni() {
+		return dni;
+	}
+
+	public void setDni (final int dni) {
+		this.dni = dni;
+	}
+	// }}
+
+
+    
     
     
 

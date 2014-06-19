@@ -28,12 +28,16 @@ public class QAlumno extends org.datanucleus.api.jdo.query.PersistableExpression
     }
 
     public final StringExpression name;
+    public final StringExpression apellido;
+    public final NumericExpression<Integer> dni;
     public final ObjectExpression<org.apache.isis.applib.DomainObjectContainer> container;
 
     public QAlumno(PersistableExpression parent, String name, int depth)
     {
         super(parent, name);
         this.name = new StringExpressionImpl(this, "name");
+        this.apellido = new StringExpressionImpl(this, "apellido");
+        this.dni = new NumericExpressionImpl<Integer>(this, "dni");
         this.container = new ObjectExpressionImpl<org.apache.isis.applib.DomainObjectContainer>(this, "container");
     }
 
@@ -41,6 +45,8 @@ public class QAlumno extends org.datanucleus.api.jdo.query.PersistableExpression
     {
         super(type, name, exprType);
         this.name = new StringExpressionImpl(this, "name");
+        this.apellido = new StringExpressionImpl(this, "apellido");
+        this.dni = new NumericExpressionImpl<Integer>(this, "dni");
         this.container = new ObjectExpressionImpl<org.apache.isis.applib.DomainObjectContainer>(this, "container");
     }
 }
