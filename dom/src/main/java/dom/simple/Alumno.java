@@ -97,7 +97,7 @@ public class Alumno implements Comparable<Alumno> {
 	private Direccion direccion;
 
 	@MemberOrder(sequence = "1.5")
-	@Column(allowsNull = "true")
+	@Column(allowsNull = "true", name = "DIRECCION_ID")
 	
     public Direccion getDireccion() {
 		return direccion;
@@ -110,9 +110,22 @@ public class Alumno implements Comparable<Alumno> {
 
 
 	
-	
-	////////////////////////////////
-    
+	// {{ Legajo (property)
+	private Legajo legajo;
+
+	@MemberOrder(sequence = "1.8")
+	@Column(allowsNull = "true", name = "LEGAJO_ID")
+	public Legajo getLegajo() {
+		return legajo;
+	}
+
+	public void setLegajo(final Legajo legajo) {
+		this.legajo = legajo;
+	}
+	// }}
+
+
+	    
     
     
 

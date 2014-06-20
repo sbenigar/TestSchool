@@ -31,6 +31,7 @@ public class QAlumno extends org.datanucleus.api.jdo.query.PersistableExpression
     public final StringExpression apellido;
     public final NumericExpression<Integer> dni;
     public final dom.simple.QDireccion direccion;
+    public final dom.simple.QLegajo legajo;
     public final ObjectExpression<org.apache.isis.applib.DomainObjectContainer> container;
 
     public QAlumno(PersistableExpression parent, String name, int depth)
@@ -47,6 +48,14 @@ public class QAlumno extends org.datanucleus.api.jdo.query.PersistableExpression
         {
             this.direccion = null;
         }
+        if (depth > 0)
+        {
+            this.legajo = new dom.simple.QLegajo(this, "legajo", depth-1);
+        }
+        else
+        {
+            this.legajo = null;
+        }
         this.container = new ObjectExpressionImpl<org.apache.isis.applib.DomainObjectContainer>(this, "container");
     }
 
@@ -57,6 +66,7 @@ public class QAlumno extends org.datanucleus.api.jdo.query.PersistableExpression
         this.apellido = new StringExpressionImpl(this, "apellido");
         this.dni = new NumericExpressionImpl<Integer>(this, "dni");
         this.direccion = new dom.simple.QDireccion(this, "direccion", 5);
+        this.legajo = new dom.simple.QLegajo(this, "legajo", 5);
         this.container = new ObjectExpressionImpl<org.apache.isis.applib.DomainObjectContainer>(this, "container");
     }
 }
