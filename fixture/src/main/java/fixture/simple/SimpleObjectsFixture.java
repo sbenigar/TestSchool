@@ -19,8 +19,10 @@
 
 package fixture.simple;
 
+
 import dom.simple.Alumno;
 import dom.simple.Alumnos;
+
 import dom.simple.SimpleObject;
 import dom.simple.SimpleObjects;
 
@@ -45,14 +47,17 @@ public class SimpleObjectsFixture extends AbstractFixture {
         create("Foo", "benegas", 36987542, "santa fe", 35, 8300, "neuquen");
         create("Bar", "lopez", 12369856, "mendoza", 128, 8300, "neuquen");
         create("Baz", "ponce", 8654125, "sarmiento", 1500, 8300, "neuquen");
+
     }
 
 
     // //////////////////////////////////////
 
+
     private Alumno create(final String name, final String apellido, final int dni, final String calle, final int numero, 
     		final int codigoPostal, String nombreLocalidad) {
         return alumnos.create(name, apellido, dni, calle, numero, codigoPostal, nombreLocalidad);
+
     }
 
 
@@ -63,6 +68,7 @@ public class SimpleObjectsFixture extends AbstractFixture {
     @javax.inject.Inject
     private Alumnos alumnos;
 
+    
     @javax.inject.Inject
     private IsisJdoSupport isisJdoSupport;
 

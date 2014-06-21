@@ -81,6 +81,7 @@ public class Alumnos {
         dire.setCalle(calle);
         dire.setNumero(numero);        
         dire.setLocalidad(loc);
+
         obj.setName(nombre);
         obj.setApellido(apellido);
         obj.setDni(dni);

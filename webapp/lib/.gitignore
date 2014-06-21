@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 #
 # explicitly ignoring Microsoft JDBC4 jar
 # (cannot redistribute, licensing)
 #
 sqljdbc4.jar
+=======
+#
+# explicitly ignoring Microsoft JDBC4 jar
+# (cannot redistribute, licensing)
+#
+sqljdbc4.jar
+>>>>>>> e9f3dbf5151b002d06fe4333658cb863bd6bcb32

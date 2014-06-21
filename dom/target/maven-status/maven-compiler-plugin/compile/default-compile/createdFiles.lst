@@ -1,15 +1,28 @@
 dom\simple\SimpleObjects.class
+<<<<<<< HEAD
 dom\simple\QAlumno.class
 dom\simple\Alumnos.class
 dom\simple\Alumno.class
+=======
+dom\simple\Alumno.class
+dom\simple\Alumnos.class
+dom\simple\QAlumno.class
+>>>>>>> e9f3dbf5151b002d06fe4333658cb863bd6bcb32
 dom\simple\Direccion.class
 dom\simple\SimpleObject.class
 dom\simple\QTarjeta.class
 dom\simple\Localidad.class
 dom\simple\QSimpleObject.class
+<<<<<<< HEAD
 dom\simple\QLegajo.class
 dom\simple\QDireccion.class
 dom\simple\Tarjeta.class
 dom\simple\QLocalidad.class
 dom\simple\Legajo.class
 dom\simple\Persona.class
+=======
+dom\simple\QDireccion.class
+dom\simple\QLegajo.class
+dom\simple\Tarjeta.class
+dom\simple\Legajo.class
+>>>>>>> e9f3dbf5151b002d06fe4333658cb863bd6bcb32

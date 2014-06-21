@@ -20,8 +20,10 @@ package webapp.prototyping;
 
 import java.util.List;
 
+
 import dom.simple.Alumno;
 import dom.simple.Alumnos;
+
 import dom.simple.SimpleObject;
 import dom.simple.SimpleObjects;
 import fixture.simple.SimpleObjectsFixture;
@@ -57,9 +59,11 @@ public class SimpleObjectsFixturesService extends AbstractService {
     
     // //////////////////////////////////////
 
+
     private Alumnos alumnos;
     public void injectSimpleObjects(Alumnos alumnos) {
         this.alumnos = alumnos;
+
     }
 
 }
