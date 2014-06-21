@@ -1,0 +1,8 @@
+C:\TestGestion\integtests\src\test\java\integration\glue\simple\SimpleObjectGlue.java
+C:\TestGestion\integtests\src\test\java\integration\glue\BootstrappingGlue.java
+C:\TestGestion\integtests\src\test\java\integration\glue\InMemoryDBForSimpleApp.java
+C:\TestGestion\integtests\src\test\java\integration\glue\CatalogOfFixturesGlue.java
+C:\TestGestion\integtests\src\test\java\integration\specs\simple\RunSpecs.java
+C:\TestGestion\integtests\src\test\java\integration\SimpleAppSystemInitializer.java
+C:\TestGestion\integtests\src\test\java\integration\tests\smoke\SimpleObjectsTest_listAll_and_create.java
+C:\TestGestion\integtests\src\test\java\integration\tests\SimpleAppIntegTest.java

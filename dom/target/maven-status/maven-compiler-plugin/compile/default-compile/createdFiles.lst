@@ -1,0 +1,13 @@
+dom\simple\SimpleObjects.class
+dom\simple\Alumno.class
+dom\simple\Alumnos.class
+dom\simple\QAlumno.class
+dom\simple\Direccion.class
+dom\simple\SimpleObject.class
+dom\simple\QTarjeta.class
+dom\simple\Localidad.class
+dom\simple\QSimpleObject.class
+dom\simple\QDireccion.class
+dom\simple\QLegajo.class
+dom\simple\Tarjeta.class
+dom\simple\Legajo.class
