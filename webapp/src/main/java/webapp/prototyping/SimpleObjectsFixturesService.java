@@ -20,6 +20,8 @@ package webapp.prototyping;
 
 import java.util.List;
 
+import dom.simple.Alumno;
+import dom.simple.Alumnos;
 import dom.simple.SimpleObject;
 import dom.simple.SimpleObjects;
 import fixture.simple.SimpleObjectsFixture;
@@ -46,18 +48,18 @@ public class SimpleObjectsFixturesService extends AbstractService {
     // //////////////////////////////////////
 
     @Prototype
-    public SimpleObject installFixturesAndReturnFirst() {
+    public Alumno installFixturesAndReturnFirst() {
         installFixtures();
-        List<SimpleObject> all = simpleObjects.listAll();
+        List<Alumno> all = alumnos.listAll();
         return !all.isEmpty() ? all.get(0) : null;
     }
 
     
     // //////////////////////////////////////
 
-    private SimpleObjects simpleObjects;
-    public void injectSimpleObjects(SimpleObjects simpleObjects) {
-        this.simpleObjects = simpleObjects;
+    private Alumnos alumnos;
+    public void injectSimpleObjects(Alumnos alumnos) {
+        this.alumnos = alumnos;
     }
 
 }

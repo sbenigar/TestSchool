@@ -1,24 +1,4 @@
 Manifest-Version: 1.0
-Bundle-Description: Utility classes for Jetty
-Bundle-License: http://www.apache.org/licenses/LICENSE-2.0, http://www
- .eclipse.org/org/documents/epl-v10.php
-Bundle-SymbolicName: org.eclipse.jetty.util
-Implementation-Version: 7.5.1.v20110908
-Archiver-Version: Plexus Archiver
-Built-By: jesse
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
-Bnd-LastModified: 1315501284971
-Bundle-ManifestVersion: 2
-Bundle-Copyright: Copyright (c) 2008-2009 Mort Bay Consulting Pty. Ltd
- .
-Bundle-Vendor: Eclipse Jetty Project
-Bundle-DocURL: http://www.eclipse.org/jetty
-Import-Package: org.slf4j;resolution:=optional;version="[1.5,1.7)",org
- .slf4j.impl;version="[1.5,1.7)";resolution:=optional,org.slf4j.spi;ve
- rsion="[1.6,2)";resolution:=optional
-url: http://www.eclipse.org/jetty
-Tool: Bnd-1.15.0
-Implementation-Vendor: Eclipse.org - Jetty
 Export-Package: org.eclipse.jetty.util.security;uses:="org.eclipse.jet
  ty.util.resource,org.eclipse.jetty.util.log";version="7.5.1",org.ecli
  pse.jetty.util.statistic;version="7.5.1",org.eclipse.jetty.util.threa
@@ -32,10 +12,30 @@ Export-Package: org.eclipse.jetty.util.security;uses:="org.eclipse.jet
  rg.eclipse.jetty.util.log,org.eclipse.jetty.util.thread,org.eclipse.j
  etty.util.component";version="7.5.1",org.eclipse.jetty.util.ajax;uses
  :="org.eclipse.jetty.util,org.eclipse.jetty.util.log";version="7.5.1"
-Bundle-Name: Jetty :: Utilities
-Bundle-Version: 7.5.1.v20110908
+Implementation-Version: 7.5.1.v20110908
 Bundle-Classpath: .
+Built-By: jesse
+Tool: Bnd-1.15.0
 Bundle-Localization: plugin
+Bundle-Name: Jetty :: Utilities
 Created-By: Apache Maven Bundle Plugin
+url: http://www.eclipse.org/jetty
+Bundle-Copyright: Copyright (c) 2008-2009 Mort Bay Consulting Pty. Ltd
+ .
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: Eclipse Jetty Project
+Implementation-Vendor: Eclipse.org - Jetty
+Bundle-Version: 7.5.1.v20110908
 Build-Jdk: 1.6.0_26
+Bnd-LastModified: 1315501284971
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0, http://www
+ .eclipse.org/org/documents/epl-v10.php
+Bundle-Description: Utility classes for Jetty
+Bundle-DocURL: http://www.eclipse.org/jetty
+Bundle-SymbolicName: org.eclipse.jetty.util
+Import-Package: org.slf4j;resolution:=optional;version="[1.5,1.7)",org
+ .slf4j.impl;version="[1.5,1.7)";resolution:=optional,org.slf4j.spi;ve
+ rsion="[1.6,2)";resolution:=optional
+Archiver-Version: Plexus Archiver
 

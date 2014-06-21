@@ -29,12 +29,21 @@ public class QDireccion extends org.datanucleus.api.jdo.query.PersistableExpress
 
     public final StringExpression calle;
     public final NumericExpression<Integer> numero;
+    public final dom.simple.QLocalidad localidad;
 
     public QDireccion(PersistableExpression parent, String name, int depth)
     {
         super(parent, name);
         this.calle = new StringExpressionImpl(this, "calle");
         this.numero = new NumericExpressionImpl<Integer>(this, "numero");
+        if (depth > 0)
+        {
+            this.localidad = new dom.simple.QLocalidad(this, "localidad", depth-1);
+        }
+        else
+        {
+            this.localidad = null;
+        }
     }
 
     public QDireccion(Class type, String name, org.datanucleus.api.jdo.query.ExpressionType exprType)
@@ -42,5 +51,6 @@ public class QDireccion extends org.datanucleus.api.jdo.query.PersistableExpress
         super(type, name, exprType);
         this.calle = new StringExpressionImpl(this, "calle");
         this.numero = new NumericExpressionImpl<Integer>(this, "numero");
+        this.localidad = new dom.simple.QLocalidad(this, "localidad", 5);
     }
 }

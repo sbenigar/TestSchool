@@ -41,6 +41,21 @@ public class Direccion {
 	}
 	// }}
 
+	// {{ Localidad (property)
+	private Localidad localidad;
+
+	@MemberOrder(sequence = "1.2")	
+	@Column(allowsNull = "true", name = "LOCALIDAD_ID")
+	public Localidad getLocalidad() {
+		return localidad;
+	}
+
+	public void setLocalidad(final Localidad localidad) {
+		this.localidad = localidad;
+	}
+	// }}
+
+
 	
 	public String title() {
 		return calle + " " + numero;

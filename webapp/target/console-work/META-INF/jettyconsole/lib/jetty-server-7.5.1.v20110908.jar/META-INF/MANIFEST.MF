@@ -1,35 +1,4 @@
 Manifest-Version: 1.0
-Bundle-Description: The core jetty server artifact.
-Bundle-License: http://www.apache.org/licenses/LICENSE-2.0, http://www
- .eclipse.org/org/documents/epl-v10.php
-Bundle-SymbolicName: org.eclipse.jetty.server
-Implementation-Version: 7.5.1.v20110908
-Archiver-Version: Plexus Archiver
-Built-By: jesse
-Bundle-RequiredExecutionEnvironment: J2SE-1.5
-Bnd-LastModified: 1315501405194
-Bundle-ManifestVersion: 2
-Bundle-Copyright: Copyright (c) 2008-2009 Mort Bay Consulting Pty. Ltd
- .
-Bundle-Vendor: Eclipse Jetty Project
-Bundle-DocURL: http://www.eclipse.org/jetty
-Import-Package: javax.naming,javax.net.ssl,javax.security.auth,javax.s
- ecurity.cert,javax.servlet;version="[2.5,3.0)",javax.servlet.http;ver
- sion="[2.5,3.0)",javax.sql,org.eclipse.jetty.continuation;version="[7
- .5,8)",org.eclipse.jetty.http;version="[7.5,8)",org.eclipse.jetty.htt
- p.gzip;version="[7.5,8)",org.eclipse.jetty.http.ssl;version="[7.5,8)"
- ,org.eclipse.jetty.io;version="[7.5,8)",org.eclipse.jetty.io.bio;vers
- ion="[7.5,8)",org.eclipse.jetty.io.nio;version="[7.5,8)",org.eclipse.
- jetty.jmx;resolution:=optional;version="[7.3,8)",org.eclipse.jetty.ut
- il;version="[7.5,8)";resolution:=optional,org.eclipse.jetty.util.comp
- onent;version="[7.5,8)";resolution:=optional,org.eclipse.jetty.util.l
- og;version="[7.5,8)";resolution:=optional,org.eclipse.jetty.util.reso
- urce;version="[7.5,8)";resolution:=optional,org.eclipse.jetty.util.st
- atistic;version="[7.5,8)";resolution:=optional,org.eclipse.jetty.util
- .thread;version="[7.5,8)";resolution:=optional
-url: http://www.eclipse.org/jetty
-Tool: Bnd-1.15.0
-Implementation-Vendor: Eclipse.org - Jetty
 Export-Package: org.eclipse.jetty.server;uses:="org.eclipse.jetty.io,o
  rg.eclipse.jetty.util.log,org.eclipse.jetty.util.statistic,org.eclips
  e.jetty.http,org.eclipse.jetty.util.thread,org.eclipse.jetty.util.com
@@ -69,10 +38,41 @@ Export-Package: org.eclipse.jetty.server;uses:="org.eclipse.jetty.io,o
  .eclipse.jetty.server,org.eclipse.jetty.io.bio,org.eclipse.jetty.io,o
  rg.eclipse.jetty.http,org.eclipse.jetty.util.thread,org.eclipse.jetty
  .util.log";version="7.5.1"
-Bundle-Name: Jetty :: Server Core
-Bundle-Version: 7.5.1.v20110908
+Implementation-Version: 7.5.1.v20110908
 Bundle-Classpath: .
+Built-By: jesse
+Tool: Bnd-1.15.0
 Bundle-Localization: plugin
+Bundle-Name: Jetty :: Server Core
 Created-By: Apache Maven Bundle Plugin
+url: http://www.eclipse.org/jetty
+Bundle-Copyright: Copyright (c) 2008-2009 Mort Bay Consulting Pty. Ltd
+ .
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Vendor: Eclipse Jetty Project
+Implementation-Vendor: Eclipse.org - Jetty
+Bundle-Version: 7.5.1.v20110908
 Build-Jdk: 1.6.0_26
+Bnd-LastModified: 1315501405194
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0, http://www
+ .eclipse.org/org/documents/epl-v10.php
+Bundle-Description: The core jetty server artifact.
+Bundle-DocURL: http://www.eclipse.org/jetty
+Bundle-SymbolicName: org.eclipse.jetty.server
+Import-Package: javax.naming,javax.net.ssl,javax.security.auth,javax.s
+ ecurity.cert,javax.servlet;version="[2.5,3.0)",javax.servlet.http;ver
+ sion="[2.5,3.0)",javax.sql,org.eclipse.jetty.continuation;version="[7
+ .5,8)",org.eclipse.jetty.http;version="[7.5,8)",org.eclipse.jetty.htt
+ p.gzip;version="[7.5,8)",org.eclipse.jetty.http.ssl;version="[7.5,8)"
+ ,org.eclipse.jetty.io;version="[7.5,8)",org.eclipse.jetty.io.bio;vers
+ ion="[7.5,8)",org.eclipse.jetty.io.nio;version="[7.5,8)",org.eclipse.
+ jetty.jmx;resolution:=optional;version="[7.3,8)",org.eclipse.jetty.ut
+ il;version="[7.5,8)";resolution:=optional,org.eclipse.jetty.util.comp
+ onent;version="[7.5,8)";resolution:=optional,org.eclipse.jetty.util.l
+ og;version="[7.5,8)";resolution:=optional,org.eclipse.jetty.util.reso
+ urce;version="[7.5,8)";resolution:=optional,org.eclipse.jetty.util.st
+ atistic;version="[7.5,8)";resolution:=optional,org.eclipse.jetty.util
+ .thread;version="[7.5,8)";resolution:=optional
+Archiver-Version: Plexus Archiver
 

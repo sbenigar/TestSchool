@@ -69,12 +69,18 @@ public class Alumnos {
             final @Named("Apellido") String apellido,
             final @Named("DNI") int dni,
             final @Named("Calle") String calle,
-            final @Named("Numero") int numero) {
+            final @Named("Numero") int numero,
+            final @Named("Codigo Postal") int codigoPostal,
+            final @Named("Localidad")String nombreloc) {
         final Alumno obj = container.newTransientInstance(Alumno.class);
         final Direccion dire = new Direccion();
-       
+        final Localidad loc = new Localidad();
+        
+        loc.setCodigopostal(codigoPostal);
+        loc.setNombre(nombreloc);
         dire.setCalle(calle);
-        dire.setNumero(numero);
+        dire.setNumero(numero);        
+        dire.setLocalidad(loc);
         obj.setName(nombre);
         obj.setApellido(apellido);
         obj.setDni(dni);
